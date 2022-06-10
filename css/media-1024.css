@@ -1,0 +1,449 @@
+@media (max-width: 1250px) {
+
+
+  [class*="__container"] {
+    min-width: 1024px;
+    padding: 0 50px;
+  }
+
+
+
+
+  /* <header class="header"> */
+
+  /* уменьшаем главный логотип */
+  .logo__img {
+    width: 150px;
+    margin-right: 36px;
+  }
+
+  /* создание бургера */
+
+  .burger {
+    display: block;
+    outline: none;
+    width: 30px;
+    position: relative;
+    height: 23px;
+    /* margin-right: 100px; */
+  }
+
+  /* средняя линяя бургера */
+  .burger__line {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #333333;
+
+  }
+
+  /* верхняя линяя */
+
+  .burger__line:first-child {
+    top: 0;
+  }
+
+  /* нижняя линяя  */
+  .burger__line:last-child {
+    bottom: 0;
+  }
+
+
+
+  /* меняем размер средней линии  */
+  .burger__line:nth-child(2) {
+    top: 45%;
+  }
+
+  /* бургер при активном режиме */
+
+  .burger:active .burger__line:first-child {
+    background-color: #e1670e;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .burger:active .burger__line:nth-child(2) {
+    width: 25px;
+    background-color: #e1670e;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .burger:active .burger__line:last-child:active {
+    width: 18px;
+    background-color: #e1670e;
+    transition: background-color .3s ease-in-out;
+  }
+
+
+
+  /* ховер на бургер */
+
+  .burger::before {
+    content: '';
+    position: absolute;
+    /* padding: 30px; */
+    top: -3px;
+    left: -3px;
+    width: 60%;
+    height: 120%;
+    border: 3px solid transparent;
+  }
+
+
+  .burger:hover::before {
+    border-color: #FF9900;
+  }
+
+  .burger:active::before {
+    border-color: #FFFFFF;
+  }
+
+
+
+  /* скрываем меню  */
+  .header__nav {
+
+    width: 420px;
+    height: 769px;
+    position: absolute;
+    left: -100%;
+    padding: 40px;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    transition: left .3s ease-in-out;
+    overflow-y: auto;
+  }
+
+  /* меню вертикальное */
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__item {
+    margin-right: 0;
+  }
+
+  .nav__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  /* крестик-закрытие меню */
+
+  .menu-close {
+    position: relative;
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin-bottom: 100px;
+  }
+
+  .menu-close::before,
+  .menu-close::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #333333;
+  }
+
+  /* крестик */
+
+  .menu-close::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-close::after {
+    transform: rotate(-45deg);
+  }
+
+  .nav.burger-active {
+    left: 1%;
+    transition: left .3s ease-in-out;
+  }
+
+  /* Смещаем крестик к левому краю  */
+  .menu-close::before,
+  .burger__line {
+    left: 0;
+  }
+
+  .menu-close::after,
+  .burger__line {
+    left: 0;
+  }
+
+  /* <section class="hero"> */
+
+  /* подгоняем под макет */
+
+  /* .hero {
+    height: 870px;
+  } */
+
+  .swiper-slide {
+    min-height: 668px;
+  }
+
+
+  .hero-content {
+    top: 162px;
+    padding-left: 30px;
+  }
+
+
+  .hero-content__heading {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+
+
+  .hero-content__text {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 660px;
+    margin-bottom: 58px;
+  }
+
+  .hero__container {
+    margin-bottom: 85px;
+  }
+
+
+  /* <section class="about"> */
+
+
+  .about__container {
+    margin-bottom: 15px;
+  }
+
+
+  .about__heading {
+    margin-bottom: 8px;
+  }
+
+
+  .about__text {
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+
+
+  .about-content__left {
+    min-height: 640px;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+
+
+  .about-left__inner {
+    width: 100%;
+    padding: 35px 48px 33px 54px;
+  }
+
+
+  .about-left__text {
+    max-width: 454px;
+    margin-right: 0;
+  }
+
+
+  .about-content__right {
+    width: 100%;
+  }
+
+
+  .about-right__item {
+    padding-left: 315px;
+    padding-bottom: 67px;
+  }
+
+
+  .about-right__title {
+    margin-bottom: 8px;
+  }
+
+
+  .about-right__text {
+    max-width: 450px;
+  }
+
+
+  .about-right__item {
+    width: 924px;
+    background-position: left 80px top 61px;
+  }
+
+
+
+  /* <section class="work"> */
+
+  .work {
+    padding-top: 66px;
+  }
+
+  .work__container {
+    margin-bottom: 0px;
+  }
+
+  .work__item:not(:last-child) {
+
+    margin-right: 80px;
+  }
+
+
+  .work__list {
+    margin-bottom: 50px;
+
+  }
+
+
+
+  .work-left__title {
+    margin-bottom: 9px;
+  }
+
+  .work__item:not(:last-child) {
+    margin-right: 72px;
+    padding-left: 0px;
+  }
+
+  .work-left__text {
+    max-width: 437px;
+    margin-bottom: 23px;
+  }
+
+
+  .work-right {
+    width: 47%;
+  }
+
+  .work-right__img {
+    min-width: 435px;
+    padding-top: 7px;
+  }
+
+  .work__headeing.site-heading {
+    margin-bottom: 47px;
+  }
+
+  .work__btn--default {
+    padding-left: 0px;
+  }
+
+
+  /* <section class="questions"> */
+
+
+  .questions {
+    padding-top: 45px;
+    padding-bottom: 82px;
+  }
+
+  .questions__container {
+    margin-bottom: 28px;
+  }
+
+  .questions__heading {
+    margin-bottom: 30px;
+  }
+
+
+  .questions__title {
+    font-size: 20px;
+    max-width: 756px;
+  }
+
+  .questions__wrapper:first-child {
+    padding: 34px 0 38px 0;
+  }
+
+  .questions__wrapper:not(:first-child) {
+    padding: 34px 0 34px 0;
+  }
+
+  .work-right__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+  /* <footer class="footer"> */
+
+  /* .footer__container {
+    padding: 36px 0px 48px 69px;
+
+  } */
+
+
+  /* убираем текст футера */
+  .footer__text {
+    display: none;
+  }
+
+  .footer-left {
+    width: 378px;
+    padding-top: 20px;
+  }
+
+
+  .footer__form {
+    max-width: 541px;
+  }
+
+
+  .footer-wrapper {
+    min-width: 100%;
+  }
+
+
+  .footer-center {
+    width: 59%;
+    margin-right: 0px;
+  }
+
+
+  .footer__container {
+    justify-content: space-between;
+    padding-right: 13px;
+  }
+
+
+  .form__btn {
+    margin-right: 13px;
+    padding: 19px 37px;
+    margin-bottom: 53px;
+
+  }
+
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+
+  .footer__title {
+
+    margin-bottom: 30px;
+  }
+
+  /* .footer__list {
+    margin-bottom: 97px;
+  } */
+
+
+}

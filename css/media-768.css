@@ -1,0 +1,202 @@
+@media (max-width: 990px) {
+
+  [class*="__container"] {
+    min-width: 580px;
+  }
+
+  .header__container {
+    min-height: 68px;
+
+  }
+
+  .nav {
+    height: 731px;
+  }
+
+
+  /* <section class="hero"> */
+
+  .swiper-slide {
+    min-height: 663px;
+  }
+
+  .hero-content {
+    top: 163px;
+    left: 40px;
+    padding-left: 50px;
+    max-width: 800px;
+  }
+
+  .hero-content__heading {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 16px;
+
+  }
+
+
+
+
+  .hero-content__text {
+    font-size: 18px;
+    max-width: 588px;
+    line-height: 22px;
+  }
+
+
+
+  /* <section class="about"> */
+
+  .about-content__left {
+    min-height: 648px;
+  }
+
+  .about-left__text {
+    margin: 0;
+    max-width: 366px;
+  }
+
+  .about-left__inner {
+    padding: 35px 38px 33px 40px;
+  }
+
+  .about-right__item {
+    padding: 35px 43px 34px 298px;
+    padding-left: 170px;
+    background-size: 114px 99px;
+    background-position: left 38px top 70px;
+    max-width: 668px;
+  }
+
+
+  .about-right__item:last-child {
+    padding: 33px 43px 34px 169px;
+  }
+
+
+
+
+  .about-left__btn {
+    padding: 18px 36px 18px 33px;
+  }
+
+  /* <section class="work"> */
+
+
+  .work__list {
+    margin-bottom: 37px;
+    justify-content: space-between;
+  }
+
+  .work__content {
+    flex-direction: column-reverse;
+  }
+
+  .work-right,
+  .work-left {
+    width: 100%;
+  }
+
+  .work-left__text {
+    max-width: 100%;
+  }
+
+  .work-right {
+    margin-bottom: 37px;
+  }
+
+
+
+
+  /* <section class="questions"> */
+
+
+
+
+
+  .questions {
+    padding-bottom: 0px;
+  }
+
+  .questions__title {
+    max-width: 570px;
+  }
+
+  .questions__heading {
+    margin-bottom: 34px;
+    margin-top: 34px;
+  }
+
+  .questions__title {
+    max-width: 580px;
+    margin-right: 95px;
+  }
+
+  .questions__wrapper {
+    padding: 38px 0;
+  }
+
+  .questions__wrapper.second {
+    padding: 31px 0 28px 0;
+  }
+
+
+  .questions__container {
+    margin-bottom: 81px;
+  }
+
+
+  /* <footer class="footer"> */
+
+  /* .footer {
+    padding-top: 42px;
+  } */
+
+  .footer__container {
+    flex-direction: column-reverse;
+    /* margin-bottom: 150px; */
+    justify-content: flex-end;
+    /* align-items: center; */
+  }
+
+
+
+
+
+  .footer-center {
+    width: 80%;
+    padding-top: 50px;
+
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer__logo {
+    margin-bottom: 12px;
+
+  }
+
+  .footer-left {
+    padding: 0;
+  }
+
+  .footer-right {
+    display: none;
+  }
+
+
+  .footer__icon {
+    flex-shrink: 0;
+    margin-bottom: 50px;
+  }
+  .footer__title {
+
+    margin-bottom: 23px;
+  }
+
+
+
+
+}
